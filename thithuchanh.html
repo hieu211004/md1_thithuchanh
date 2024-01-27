@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /* Bai 1
+    function selection(arr){
+        for (let i = 0; i < arr.length - 1 ; i++) {
+            let min = i;
+            for (let j = i; j < arr.length ; j++) {
+                if (arr[j] > arr[min]){
+                    min = j;
+                }
+            }
+            if (min !== i){
+                let temp = arr[i];
+                arr[i] = arr[min];
+                arr[min] = temp;
+            }
+        }return arr;
+    }
+    function findThirdHighest(score) {
+        let sortedScore = selection(score);
+        return sortedScore[2]
+        
+    }
+    let scores = [15,5,3,10,33,22];
+    document.write(findThirdHighest(scores))
+    */
+    /* bai 2
+    function tryRemoveFromArray(arr,index) {
+        if (index < 0 || index >= arr.length){
+            return arr;
+        }
+        let newArr = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (i !== index){
+                newArr.push(arr[i]);
+            }
+        }
+        return newArr;
+        
+    }
+    document.write(tryRemoveFromArray([2,3,5,43,7,89,47],5))
+    */
+    /* bai 3
+    function checkString(str1,str2) {
+        if (str2.indexOf(str1) !== -1){
+            return true;
+        }else {
+            return false;
+        }
+        
+    }document.write(checkString("qwer","asdfghjkl"))
+    */
+    /* bai 4
+    class Rectangle{
+        constructor(x,y,width,height,color) {
+            this.x = x;
+            this.y = y;
+            this.width = width;
+            this.height = height;
+            this.color = color;
+        }
+        render(canvas){
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = this.color;
+            ctx.fillRect(this.x,this.y,this.width,this.height);
+        }
+    }
+    const myRectangle = new Rectangle(10, 10, 200, 100, '#000000');
+    const myCanvas = document.createElement('canvas');
+    document.body.appendChild(myCanvas);
+    myRectangle.render(myCanvas);
+    */
+
+
+
+</script>
+
+</body>
+</html>
